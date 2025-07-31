@@ -48,7 +48,7 @@ ehthumbs.db
 Thumbs.db
 
 # Large output files (keep structure but exclude large data)
-output/**/*.json
+
 output/**/*.csv
 output/**/*.log
 !output/processed_files.json

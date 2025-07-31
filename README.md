@@ -8,6 +8,33 @@ For detailed documentation of CellViT inference and model usage, please refer to
 
 The `calculate_nuclei_areas_cellvit.py` script processes CellViT JSON output to compute detailed nuclei morphometrics and cell type statistics. It works with both binary classification (nuclei vs background) and multi-class classification (Neoplastic, Inflammatory, Connective, Dead, Epithelial).
 
+## Inference Details
+You may choose the `nuclei_taxonomy` for inference from the CellViT documentations. For example, `./CellViT_adapt/src/test_inference.sh` is provided for inference examples.
+
+### Binary Model Inference
+
+- **Model Used**: CellViT binary model (nuclei vs background)
+- **Input**: Whole slide images (WSIs) in SVS format
+- **Preprocessing**:
+  - WSIs are divided into patches (e.g., 1024x1024 pixels)
+  - Patches are normalized and resized as needed
+- **Inference**:
+  - Each patch is classified as containing nuclei or not
+  - Detected nuclei are segmented and saved in JSON format
+- **Output**: `cells.json` with nuclei contours, centroids, and type probabilities
+
+### HIPT/SAM Model Inference
+
+- **Model Used**: CellViT SAM (Segment Anything Model) for nuclei segmentation
+- **Input**: Whole slide images (WSIs) in SVS format
+- **Preprocessing**:
+  - WSIs are converted to a suitable format for SAM
+  - Normalization and resizing as per SAM requirements
+- **Inference**:
+  - SAM is used to segment nuclei in the WSIs
+  - Segmentation results are refined and converted to JSON format
+- **Output**: `cells.json` with detailed nuclei segmentation data
+
 ## Input Data Structure
 
 ### Primary Input: `cells.json`
@@ -294,6 +321,7 @@ CellViT_adapt/
 │           └── nuclei_areas_summary.json
 └── README.md                                # This file
 ```
+
 
 ## Citation
 

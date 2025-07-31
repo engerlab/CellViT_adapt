@@ -1,0 +1,68 @@
+{
+  "total_nuclei": 37929,
+  "total_area_um2": 677364.15625,
+  "mean_area_um2": 17.858740179018692,
+  "median_area_um2": 15.6875,
+  "std_area_um2": 10.43360273920652,
+  "min_area_um2": 0.875,
+  "max_area_um2": 117.96875,
+  "q25_area_um2": 10.75,
+  "q75_area_um2": 22.28125,
+  "q95_area_um2": 37.8125,
+  "total_area_pixels": 10837826.5,
+  "mean_area_pixels": 285.7398428642991,
+  "median_area_pixels": 251.0,
+  "std_area_pixels": 166.93764382730433,
+  "min_area_pixels": 14.0,
+  "max_area_pixels": 1887.5,
+  "q25_area_pixels": 172.0,
+  "q75_area_pixels": 356.5,
+  "q95_area_pixels": 605.0,
+  "mean_radius_um": 2.2943886929383264,
+  "median_radius_um": 2.234611004069437,
+  "std_radius_um": 0.648378037479748,
+  "min_radius_um": 0.527751030705594,
+  "max_radius_um": 6.127856018685822,
+  "q25_radius_um": 1.8498192550829797,
+  "q75_radius_um": 2.6631451615585258,
+  "q95_radius_um": 3.4693072177777204,
+  "mean_radius_pixels": 9.177554771753305,
+  "median_radius_pixels": 8.938444016277748,
+  "std_radius_pixels": 2.593512149918992,
+  "min_radius_pixels": 2.111004122822376,
+  "max_radius_pixels": 24.51142407474329,
+  "q25_radius_pixels": 7.399277020331919,
+  "q75_radius_pixels": 10.652580646234103,
+  "q95_radius_pixels": 13.877228871110882,
+  "cell_type_stats": {
+    "nuclei_type_1": {
+      "count": 37929,
+      "mean_area_um2": 17.858740179018692,
+      "median_area_um2": 15.6875,
+      "std_area_um2": 10.43360273920652,
+      "min_area_um2": 0.875,
+      "max_area_um2": 117.96875,
+      "mean_area_pixels": 285.7398428642991,
+      "mean_radius_um": 2.2943886929383264,
+      "mean_radius_pixels": 9.177554771753305,
+      "percentage_of_total": 100.0
+    }
+  },
+  "pixel_size_um": 0.25,
+  "magnification": 40.0,
+  "cell_type_meanings": {
+    "0": "background",
+    "1": "nuclei"
+  },
+  "type_map": {
+    "0": "background",
+    "1": "nuclei"
+  },
+  "image_metadata": {
+    "base_magnification": 40,
+    "patch_size": 1024,
+    "patch_overlap": 64,
+    "base_mpp": 0.25,
+    "target_patch_mpp": 0.25
+  }
+}
