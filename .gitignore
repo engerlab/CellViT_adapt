@@ -53,11 +53,11 @@ output/**/*.csv
 output/**/*.log
 !output/processed_files.json
 
-# Test data
+# Test data - exclude entire test_database directory
 test_database/
+test_database/**
 
 # Logs
-*.log
 logs/
 cufile.log
 
